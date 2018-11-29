@@ -27,7 +27,7 @@ export default class HomePage extends Component {
             listaInternet: window.instanceParser.data.filterProduct('internet'),
             listaFone: window.instanceParser.data.filterProduct('fone'),
             listaCelular: window.instanceParser.data.filterProduct('celular'),
-            carrinho: this.getCart() 
+            carrinho: this.getCart()
         });
     }
     getCart = () => {
@@ -45,9 +45,9 @@ export default class HomePage extends Component {
             <Fragment>
                 <p>home</p>
                 <Products type="tv">
-                    { 
+                    {
                         this.state.listaTv.map(product => {
-                            return <Product 
+                            return <Product
                                 key={ product.id }
                                 nome={ product.nome }
                                 preco={ product.preco }
